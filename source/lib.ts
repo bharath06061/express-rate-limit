@@ -143,7 +143,7 @@ const parseOptions = (passedOptions: Partial<Options>): Configuration => {
 				)
 			}
 
-			return request.ip
+			return request.body.ipaddress
 		},
 		async handler(
 			request: Request,
